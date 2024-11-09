@@ -1,0 +1,15 @@
+.stats {
+  display: flex;
+  gap: 24px;
+}
+
+.stats__stat {
+  font-weight: bold;
+  color: #e7e9ea;
+  margin: 0;
+}
+
+.stats__stat-label {
+  font-weight: normal;
+  color: #6b7075;
+}

@@ -1,0 +1,47 @@
+.top-bar {
+  background-color: #000000;
+  border-bottom: 2px solid #2f3336;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  gap: 24px;
+}
+
+.top-bar__back-button {
+  background-color: transparent;
+  color: #e7e9ea;
+  cursor: pointer;
+  border: none;
+  margin-left: 12px;
+}
+
+.top-bar__title {
+  margin: 0;
+  color: #e7e9ea;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.top-bar__posts-count {
+  font-size: 0.875rem;
+  color: #6b7075;
+}
+
+.top-bar__back-button:hover {
+  color: #1d9bf0;
+}
+
+@media screen and (max-width: 480px) {
+  .top-bar__back-button svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .top-bar__title {
+    font-size: 1rem;
+  }
+
+  .top-bar__posts-count {
+    font-size: 0.875rem;
+  }
+}

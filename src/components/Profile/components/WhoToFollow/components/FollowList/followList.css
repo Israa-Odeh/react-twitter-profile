@@ -1,0 +1,13 @@
+@media screen and (max-width: 480px) {
+  .suggestion-item__image {
+    margin-top: 24px;
+  }
+
+  .suggestion-item__info {
+    font-size: 0.875rem;
+  }
+
+  .suggestion-item__button {
+    padding: 4px 8px;
+  }
+}

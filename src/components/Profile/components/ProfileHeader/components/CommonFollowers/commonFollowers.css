@@ -1,0 +1,21 @@
+.followers {
+  display: flex;
+  gap: 12px;
+}
+
+.followers__images {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.followers__images-image {
+  border-radius: 50%;
+  margin-left: -8px;
+}
+
+.followers__description {
+  color: #6b7075;
+  font-size: 0.875rem;
+  margin: 0;
+}

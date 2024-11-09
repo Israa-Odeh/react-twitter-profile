@@ -1,0 +1,16 @@
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  font-size: 0.875rem;
+  padding: 0 16px 16px 16px;
+}
+
+.footer-links__link {
+  color: #6b7075;
+  text-decoration: none;
+}
+
+.footer-links__link:hover {
+  color: #1d9bf0;
+}
