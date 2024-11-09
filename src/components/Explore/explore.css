@@ -1,0 +1,25 @@
+.explore {
+  flex: 1.1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #000000;
+  margin-right: 24px;
+}
+
+.you-might-like,
+.trends-for-you {
+  background-color: #16181c;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .explore {
+    display: none;
+  }
+}
