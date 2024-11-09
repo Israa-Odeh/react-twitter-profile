@@ -1,0 +1,27 @@
+*,
+*::before,
+**::after {
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+}
+
+.section-header {
+  font-size: 1rem;
+  margin: 0;
+  color: #e7e9ea;
+}
+
+.show-more-button {
+  background-color: transparent;
+  border: none;
+  color: #197ec2;
+  cursor: pointer;
+  text-align: left;
+}
+
+.show-more-button:hover {
+  color: #1d9bf0;
+}

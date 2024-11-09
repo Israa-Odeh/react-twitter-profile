@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Explore, Profile, Sidebar } from "./components";
+import {
+  user,
+  suggestedFollowers,
+  recommendedFollowers,
+  trends,
+  visitedProfileData,
+} from "./data/data";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Sidebar user={user} />
+      <Profile
+        recommendedFollowers={recommendedFollowers}
+        profileData={visitedProfileData}
+      />
+      <Explore suggestions={suggestedFollowers} trends={trends} />
     </div>
   );
-}
+};
 
 export default App;
