@@ -1,32 +1,31 @@
 import { RiMoreFill } from "react-icons/ri";
 import formatCount from "utils/formatCount";
+import isArabicText from "utils/isArabicText";
 import "./trendItem.css";
 
 const TrendItem = ({ trend }) => {
-  const isArabic = (str) => {
-    return /[\u0600-\u06FF]/.test(str);
-  };
+  const { category, topic, tweetCount } = trend;
 
-  const isTrendArabic = isArabic(trend.topic);
+  const isTrendArabic = isArabicText(topic);
 
   const directionClass = isTrendArabic ? "rtl" : "ltr";
 
   return (
     <div className="trend">
       <div className="trend__info">
-        {trend.category && (
+        {category && (
           <span
             className={`trend__category trend__category--${directionClass}`}
           >
-            {trend.category}
+            {category}
           </span>
         )}
         <span className={`trend__topic trend__topic--${directionClass}`}>
-          {trend.topic}
+          {topic}
         </span>
-        {trend.tweetCount !== undefined && (
+        {tweetCount !== undefined && (
           <span className="trend__tweet-count">
-            {formatCount(trend.tweetCount)} posts
+            {formatCount(tweetCount)} posts
           </span>
         )}
       </div>
