@@ -1,24 +1,13 @@
 import React from "react";
-import { Explore, Profile, Sidebar } from "./components";
-import {
-  user,
-  suggestedFollowers,
-  recommendedFollowers,
-  trends,
-  visitedProfileData,
-} from "./data/data";
+import AppShellLayout from "layouts/AppShellLayout";
+import Profile from "./pages/Profile";
 import "./App.css";
 
 const App = () => {
   return (
-    <div className="app">
-      <Sidebar user={user} />
-      <Profile
-        recommendedFollowers={recommendedFollowers}
-        profileData={visitedProfileData}
-      />
-      <Explore suggestions={suggestedFollowers} trends={trends} />
-    </div>
+    <AppShellLayout>
+      <Profile />
+    </AppShellLayout>
   );
 };
 

@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-.app {
-  display: flex;
-}
-
 .section-header {
   font-size: 1rem;
   margin: 0;
