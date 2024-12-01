@@ -1,0 +1,18 @@
+.sidebar__item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 0;
+  color: #e7e9ea;
+  text-decoration: none;
+}
+
+.sidebar__item:hover {
+  color: #1d9bf0;
+}
+
+@media screen and (max-width: 1200px) {
+  .sidebar__item-label {
+    display: none;
+  }
+}

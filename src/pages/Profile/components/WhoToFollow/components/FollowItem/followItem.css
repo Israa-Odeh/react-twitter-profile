@@ -1,0 +1,17 @@
+.follow-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.follow-item__description {
+  color: #e7e9ea;
+  margin: 0 0 0 48px;
+  font-size: 0.875rem;
+}
+
+@media screen and (max-width: 480px) {
+  .follow-item__description {
+    font-size: 0.75rem;
+  }
+}

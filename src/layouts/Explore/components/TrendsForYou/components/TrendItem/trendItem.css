@@ -1,0 +1,39 @@
+.trend {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trend__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex-grow: 1;
+}
+
+.trend__category,
+.trend__tweet-count {
+  color: #6b7075;
+  font-size: 0.875rem;
+}
+
+.trend__topic {
+  color: #e7e9ea;
+  font-weight: 600;
+}
+
+.trend__options-button {
+  background-color: transparent;
+  color: #6b7075;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+.trend__options-button:hover {
+  color: #1d9bf0;
+}
+
+.trend__category--rtl,
+.trend__topic--rtl {
+  direction: rtl;
+}

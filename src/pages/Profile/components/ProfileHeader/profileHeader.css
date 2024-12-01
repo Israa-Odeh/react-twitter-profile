@@ -1,0 +1,50 @@
+.profile-header__cover {
+  width: 100%;
+  height: 224px;
+  background-color: #222222;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.profile-header__avatar-actions-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 16px;
+}
+
+.profile-header__avatar {
+  background-color: #222222;
+  border-radius: 50%;
+  padding: 2px;
+  border: 4px solid #000000;
+  margin-top: -64px;
+}
+
+.profile-header__details {
+  margin: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.profile-header__bio {
+  color: #e7e9ea;
+  margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .profile-header {
+    font-size: 0.875rem;
+  }
+
+  .profile-header__cover {
+    height: 128px;
+  }
+
+  .profile-header__avatar {
+    width: 64px;
+    height: 64px;
+    margin-top: -32px;
+  }
+}

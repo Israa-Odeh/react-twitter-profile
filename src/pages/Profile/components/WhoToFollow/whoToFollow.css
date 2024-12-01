@@ -1,0 +1,9 @@
+.who-to-follow {
+  background-color: #000000;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-top: 2px solid #2f3336;
+  border-bottom: 2px solid #2f3336;
+}

@@ -1,0 +1,16 @@
+.metadata {
+  display: flex;
+  gap: 24px;
+}
+
+.metadata__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #6b7075;
+}
+
+.metadata__item-link {
+  text-decoration: none;
+  color: #1a8edc;
+}

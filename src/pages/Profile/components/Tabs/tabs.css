@@ -1,0 +1,42 @@
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  border-bottom: 2px solid #2f3336;
+  margin-top: 24px;
+}
+
+.tab {
+  padding: 12px 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #6b7075;
+}
+
+.tab--active {
+  border-bottom: 2px solid #1d9bf0;
+  font-weight: bold;
+  color: #e7e9ea;
+}
+
+@media screen and (max-width: 768px) {
+  .tab {
+    font-size: 0.875rem;
+  }
+
+  .tabs__likes {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tabs {
+    gap: 12px;
+  }
+
+  .tab {
+    font-size: 0.75rem;
+  }
+}

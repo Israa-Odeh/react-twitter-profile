@@ -1,0 +1,20 @@
+.searchbar {
+  display: flex;
+  align-items: center;
+  border-radius: 24px;
+  background-color: #202327;
+  padding: 8px;
+}
+
+.searchbar__icon {
+  color: #61666b;
+}
+
+.searchbar__input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  color: #e7e9ea;
+  padding: 0 12px;
+}
